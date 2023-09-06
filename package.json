@@ -1,0 +1,19 @@
+{
+  "name": "caesar-cipher",
+  "version": "1.0.0",
+  "description": "This is the best encyption tool in the market.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitgud5/caesar-cipher.git"
+  },
+  "author": "ZeroNine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitgud5/caesar-cipher/issues"
+  },
+  "homepage": "https://github.com/gitgud5/caesar-cipher#readme"
+}
