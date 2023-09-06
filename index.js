@@ -20,7 +20,6 @@ function caesarCipherEncrypt(message, shift=3) {
     }
 
     const shiftedIndex = (charIndex + shift) % 26;
-    console.log(alphabet[shiftedIndex])
     const shiftedChar = isUpperCase
       ? alphabet[shiftedIndex]
       : alphabet[shiftedIndex].toLowerCase();
