@@ -40,6 +40,7 @@ function caesarCipherEncrypt(message, shift=3) {
 }
 
 // Function for Decryption
+// Default Shift value will be same as Encryption
 function caesarCipherDecrypt(encryptedMessage, shift=3) {
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
