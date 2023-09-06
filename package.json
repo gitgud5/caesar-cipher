@@ -1,7 +1,29 @@
 {
-  "name": "caesar-cipher",
+  "name": "caesar-crypt",
   "version": "1.0.0",
   "description": "This is the best encyption tool in the market.",
+  "keywords": [
+    "caesar-cipher",
+    "encryption",
+    "decryption",
+    "cryptography",
+    "security",
+    "cipher",
+    "code",
+    "shift",
+    "secret",
+    "message",
+    "alphabet",
+    "nodejs",
+    "npm",
+    "library",
+    "encode",
+    "decode",
+    "cryptanalysis",
+    "encoding",
+    "shifting",
+    "privacy"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
