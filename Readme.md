@@ -66,5 +66,3 @@ Found a bug? Have a great idea for an improvement? We'd love to hear from you! H
 
 Made with ❤️ by ZeroNine
 ```
-
-This README.md is designed to be engaging and informative, providing an introduction to your package and clear instructions on how to use it. You can customize it further based on your preferences and needs.
