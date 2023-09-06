@@ -1,5 +1,6 @@
 // Function for encryption
-function caesarCipherEncrypt(message, shift) {
+// Default shift is 3
+function caesarCipherEncrypt(message, shift=3) {
   // Alright firstly, we are gonna make a string so that we can move the alphabets
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -19,6 +20,7 @@ function caesarCipherEncrypt(message, shift) {
     }
 
     const shiftedIndex = (charIndex + shift) % 26;
+    console.log(alphabet[shiftedIndex])
     const shiftedChar = isUpperCase
       ? alphabet[shiftedIndex]
       : alphabet[shiftedIndex].toLowerCase();
@@ -38,7 +40,7 @@ function caesarCipherEncrypt(message, shift) {
 }
 
 // Function for Decryption
-function caesarCipherDecrypt(encryptedMessage, shift) {
+function caesarCipherDecrypt(encryptedMessage, shift=3) {
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
   function shiftCharacter(char, shift) {
