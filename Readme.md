@@ -65,8 +65,4 @@ This package is distributed under the [ISC License](https://opensource.org/licen
 Found a bug? Have a great idea for an improvement? We'd love to hear from you! Head over to our [GitHub repository](https://github.com/gitgud5/caesar-cipher) and contribute to make Caesar Cipher even better.
 
 ---
-
 Made with ❤️ by ZeroNine
-```
-
-This README.md is designed to be engaging and informative, providing an introduction to your package and clear instructions on how to use it. You can customize it further based on your preferences and needs.
