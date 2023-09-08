@@ -40,7 +40,6 @@
   },
   "homepage": "https://github.com/gitgud5/caesar-cipher#readme",
   "devDependencies": {
-    "@types/node": "^20.5.9",
     "typescript": "^5.2.2"
   }
 }

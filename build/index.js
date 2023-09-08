@@ -1,7 +1,9 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.caesarDecrypt = exports.caesarEncrypt = void 0;
 // Function for encryption
 // Default shift is 3
-function caesarCipherEncrypt(message, shift = 3) {
+function caesarEncrypt(message, shift = 3) {
     // Alright firstly, we are gonna make a string so that we can move the alphabets
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     // Function to shift the characters
@@ -17,9 +19,9 @@ function caesarCipherEncrypt(message, shift = 3) {
             return char;
         }
         const shiftedIndex = (charIndex + shift) % 26;
-        const shiftedChar = isUpperCase ?
-            alphabet[shiftedIndex] :
-            alphabet[shiftedIndex].toLowerCase();
+        const shiftedChar = isUpperCase
+            ? alphabet[shiftedIndex]
+            : alphabet[shiftedIndex].toLowerCase();
         return shiftedChar;
     }
     let encryptedMessage = "";
@@ -30,9 +32,10 @@ function caesarCipherEncrypt(message, shift = 3) {
     }
     return encryptedMessage;
 }
+exports.caesarEncrypt = caesarEncrypt;
 // Function for Decryption
 // Default Shift value will be same as Encryption
-function caesarCipherDecrypt(encryptedMessage, shift = 3) {
+function caesarDecrypt(encryptedMessage, shift = 3) {
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     function shiftCharacter(char, shift) {
         if (char === " ") {
@@ -45,9 +48,9 @@ function caesarCipherDecrypt(encryptedMessage, shift = 3) {
         }
         // Here we use +26 so that the value is always a positive integer. cuz sometimes it may be negative.
         const shiftedIndex = (charIndex - shift + 26) % 26;
-        const shiftedChar = isUpperCase ?
-            alphabet[shiftedIndex] :
-            alphabet[shiftedIndex].toLowerCase();
+        const shiftedChar = isUpperCase
+            ? alphabet[shiftedIndex]
+            : alphabet[shiftedIndex].toLowerCase();
         return shiftedChar;
     }
     let decryptedMessage = "";
@@ -58,7 +61,9 @@ function caesarCipherDecrypt(encryptedMessage, shift = 3) {
     }
     return decryptedMessage;
 }
-module.exports = {
-    caesarCipherEncrypt,
-    caesarCipherDecrypt,
+exports.caesarDecrypt = caesarDecrypt;
+const caesar = {
+    caesarEncrypt,
+    caesarDecrypt,
 };
+exports.default = caesar;
