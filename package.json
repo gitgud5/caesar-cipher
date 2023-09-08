@@ -24,7 +24,7 @@
     "shifting",
     "privacy"
   ],
-  "main": "./dist/index.js",
+  "main": "./build/index.js",
   "scripts": {
     "build": "npx tsc --declaration",
     "test": "echo \"Error: no test specified\" && exit 1"
