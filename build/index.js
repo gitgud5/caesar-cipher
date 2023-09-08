@@ -3,6 +3,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.caesarDecrypt = exports.caesarEncrypt = void 0;
 // Function for encryption
 // Default shift is 3
+/**
+ *
+ * @param message - This is the message to be encrypted
+ * @param shift - How much shift in letters do you want? (Default is 3)
+ * @returns - Encrypted message
+ */
 function caesarEncrypt(message, shift = 3) {
     // Alright firstly, we are gonna make a string so that we can move the alphabets
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -35,6 +41,12 @@ function caesarEncrypt(message, shift = 3) {
 exports.caesarEncrypt = caesarEncrypt;
 // Function for Decryption
 // Default Shift value will be same as Encryption
+/**
+ *
+ * @param encryptedMessage - Message to be decrypted
+ * @param shift - The shift for the message (Default is 3)
+ * @returns - Decrypted Message
+ */
 function caesarDecrypt(encryptedMessage, shift = 3) {
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     function shiftCharacter(char, shift) {

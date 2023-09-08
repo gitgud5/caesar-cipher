@@ -2,6 +2,12 @@ import { CaesarInterface } from "./interface";
 
 // Function for encryption
 // Default shift is 3
+/**
+ * 
+ * @param message - This is the message to be encrypted
+ * @param shift - How much shift in letters do you want? (Default is 3)
+ * @returns - Encrypted message
+ */
 export function caesarEncrypt(message: string, shift: number = 3): string {
   // Alright firstly, we are gonna make a string so that we can move the alphabets
   const alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -42,6 +48,12 @@ export function caesarEncrypt(message: string, shift: number = 3): string {
 
 // Function for Decryption
 // Default Shift value will be same as Encryption
+/**
+ * 
+ * @param encryptedMessage - Message to be decrypted
+ * @param shift - The shift for the message (Default is 3)
+ * @returns - Decrypted Message
+ */
 export function caesarDecrypt(
   encryptedMessage: string,
   shift: number = 3
