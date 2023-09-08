@@ -1,16 +1,18 @@
 import { CaesarInterface } from "./interface";
 /**
+ * Encrypts a message using the Caesar cipher.
  *
- * @param message - This is the message to be encrypted
- * @param shift - How much shift in letters do you want? (Default is 3)
- * @returns - Encrypted message
+ * @param message - The message to encrypt.
+ * @param shift - The number of positions to shift each character (default: 3).
+ * @returns The encrypted message.
  */
 export declare function caesarEncrypt(message: string, shift?: number): string;
 /**
+ * Decrypts an encrypted message using the Caesar cipher.
  *
- * @param encryptedMessage - Message to be decrypted
- * @param shift - The shift for the message (Default is 3)
- * @returns - Decrypted Message
+ * @param encryptedMessage - The encrypted message to decrypt.
+ * @param shift - The number of positions to shift each character (default: 3).
+ * @returns The decrypted message.
  */
 export declare function caesarDecrypt(encryptedMessage: string, shift?: number): string;
 declare const caesar: CaesarInterface;
