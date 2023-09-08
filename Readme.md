@@ -1,66 +1,65 @@
-
-# 🌟 Caesar Cipher: The Ultimate Encryption Tool! 🌟
+# 🚀 Caesar Cipher: The Ultimate Encryption Tool! 🚀
 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-Welcome to Caesar Cipher, the most fantastic encryption tool you've ever seen! 😄 Secure your messages with a touch of ancient Roman mystique. 🏛️
+Welcome to Caesar Cipher, your gateway to the world of encryption, where ancient Roman mystique meets cutting-edge security! 🏛️
 
-## What is Caesar Cipher?
+## Unveiling Caesar Cipher
 
-Caesar Cipher is a simple yet effective encryption method used since the days of Julius Caesar. It involves shifting letters of the alphabet by a fixed number of positions to encode and decode messages. With this package, you can encrypt and decrypt your messages with ease.
+Caesar Cipher, a time-honored encryption technique, traces its origins back to the days of Julius Caesar himself. It's a powerful method that involves shifting letters of the alphabet by a fixed number of positions to encode and decode messages. Now, with this exceptional package, you can harness the power of Caesar Cipher to protect your messages with ease and style.
 
-## Features
+## Astonishing Features
 
-✨ **Super Easy to Use:** Encrypt and decrypt messages effortlessly.
-🔒 **Customizable Shift:** Choose your own shift value for added security.
-🌐 **Alphabet-Agnostic:** Works with any alphabet, not just English.
-💻 **Node.js Ready:** Use it in your Node.js projects right away.
+✨ **Effortless Encryption:** Encrypt and decrypt messages with unmatched simplicity.
+🔒 **Tailored Shifts:** Customize your shift value for unparalleled security.
+<!-- 🌐 **Alphabet Agnostic:** Compatible with any alphabet, not limited to English. -->
+💻 **Node.js & TypeScript Ready:** Seamlessly integrate it into your Node.js and TypeScript projects, complete with autocompletion!
 
 ## Installation
 
-To get started with Caesar Cipher, simply install it in your Node.js project using npm:
+To embark on your encryption journey with Caesar Cipher, simply install it in your Node.js or TypeScript project using npm:
 
 ```bash
-npm install caesar-cipher
+npm install caesar-crypt
 ```
 
 ## How to Use
 
-1. **Require the Package:**
+1. **Import the Package:**
 
-   In your Node.js script, require the `caesar-cipher` package:
+   In your Node.js or TypeScript script, import the `caesar-crypt` package with full TypeScript autocompletion:
 
-   ```javascript
-   const { caesarCipherEncrypt, caesarCipherDecrypt } = require('caesar-cipher');
+   ```typescript
+   import { caesarEncrypt, caesarDecrypt } from 'caesar-crypt';
    ```
 
-2. **Encrypt a Message:**
+2. **Encrypt Your Message:**
 
-   Use the `caesarCipherEncrypt` function to encrypt your message. The default shift is set to 3 if not specified:
+   Employ the `caesarEncrypt` function to encrypt your message. The default shift is set to 3 if not specified:
 
-   ```javascript
-   const encryptedMessage = caesarCipherEncrypt('Hello, World!', 5); // Shift by 5 positions
+   ```typescript
+   const encryptedMessage = caesarEncrypt('Hello, World!', 5); // Shift by 5 positions
    console.log('Encrypted Message:', encryptedMessage);
    ```
 
-3. **Decrypt a Message:**
+3. **Decrypt with Precision:**
 
-   To decrypt the message, use the `caesarCipherDecrypt` function with the same shift value:
+   To decrypt the message, employ the `caesarDecrypt` function with the same shift value:
 
-   ```javascript
-   const decryptedMessage = caesarCipherDecrypt(encryptedMessage, 5); // Shift by 5 positions
+   ```typescript
+   const decryptedMessage = caesarDecrypt(encryptedMessage, 5); // Shift by 5 positions
    console.log('Decrypted Message:', decryptedMessage);
    ```
 
-That's it! You're now ready to encrypt and decrypt messages like a secret agent from ancient Rome! 🕵️‍♂️
+Congratulations! You're now armed with the tools of a master encryption agent, ready to safeguard your messages with style and sophistication! 🕵️‍♂️
 
 ## License
 
-This package is distributed under the [ISC License](https://opensource.org/licenses/ISC). Feel free to use it for any project, personal or commercial.
+This extraordinary package operates under the [ISC License](https://opensource.org/licenses/ISC). Feel free to wield its power in any project, be it personal or commercial.
 
-## Contribute
+## Be Part of the Revolution
 
-Found a bug? Have a great idea for an improvement? We'd love to hear from you! Head over to our [GitHub repository](https://github.com/gitgud5/caesar-cipher) and contribute to make Caesar Cipher even better.
+Found a bug? Bursting with brilliant ideas for improvement? We'd love to hear from you! Join our crusade to elevate Caesar Cipher to even greater heights by contributing to our [GitHub repository](https://github.com/gitgud5/caesar-crypt).
 
 ---
-Made with ❤️ by ZeroNine
+Crafted with ❤️ by ZeroNine
