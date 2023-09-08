@@ -1,7 +1,7 @@
 {
   "name": "caesar-crypt",
   "version": "1.1.0",
-  "description": "This is the best encyption tool in the market.",
+  "description": "This is the best encyption tool in the market. And it is in typescript now :)",
   "keywords": [
     "caesar-cipher",
     "encryption",
@@ -26,6 +26,7 @@
   ],
   "main": "index.js",
   "scripts": {
+    "build": "npx tsc --declaration",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -37,5 +38,9 @@
   "bugs": {
     "url": "https://github.com/gitgud5/caesar-cipher/issues"
   },
-  "homepage": "https://github.com/gitgud5/caesar-cipher#readme"
+  "homepage": "https://github.com/gitgud5/caesar-cipher#readme",
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "typescript": "^5.2.2"
+  }
 }
