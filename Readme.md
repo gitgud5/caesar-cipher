@@ -57,6 +57,10 @@ Congratulations! You're now armed with the tools of a master encryption agent, r
 
 This extraordinary package operates under the [ISC License](https://opensource.org/licenses/ISC). Feel free to wield its power in any project, be it personal or commercial.
 
+## Fully Tested
+
+Rest assured, caesar-crypt has undergone rigorous testing to ensure it's reliability and security.
+
 ## Be Part of the Revolution
 
 Found a bug? Bursting with brilliant ideas for improvement? We'd love to hear from you! Join our crusade to elevate Caesar Cipher to even greater heights by contributing to our [GitHub repository](https://github.com/gitgud5/caesar-crypt).
