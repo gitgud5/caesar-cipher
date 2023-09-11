@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - "./package.json"
 
 jobs:
   test:
@@ -35,10 +37,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "20"
-
-      - name: Increment Package Version
-        run: npm version patch # You can use "minor" or "major" as needed
-        id: version
 
       - name: Publish to npm
         run: |
