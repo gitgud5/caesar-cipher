@@ -14,9 +14,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: "14"
 
       - name: Install dependencies
         run: npm install
@@ -32,9 +32,13 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: "20"
+
+      - name: Increment Package Version
+        run: npm version patch # You can use "minor" or "major" as needed
+        id: version
 
       - name: Publish to npm
         run: |
