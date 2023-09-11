@@ -50,8 +50,8 @@ describe("caesarDecrypt", () => {
   });
 
   it("should handle spaces and special characters", () => {
-    const encryptedMessage = "KHOOR ZRUOG!";
-    const expected = "HELLO WORLD!";
+    const encryptedMessage = "KHOOR ZRUOG!!";
+    const expected = "HELLO WORLD!!";
     expect(caesarDecrypt(encryptedMessage)).toBe(expected);
   });
 });
