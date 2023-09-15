@@ -8,7 +8,13 @@ exports.caesarDecrypt = exports.caesarEncrypt = void 0;
  * @param shift - The number of positions to shift each character (default: 3).
  * @returns The encrypted message.
  */
-function caesarEncrypt(message = "", shift = 3) {
+function caesarEncrypt(message, shift = 3) {
+    if (message === undefined) {
+        throw new Error("A message to encrypt was not provided");
+    }
+    if (shift <= 0) {
+        throw new Error("The shift value cannot be negative");
+    }
     // Alright firstly, we are gonna make a string so that we can move the alphabets
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     // Function to shift the characters
@@ -45,7 +51,13 @@ exports.caesarEncrypt = caesarEncrypt;
  * @param shift - The number of positions to shift each character (default: 3).
  * @returns The decrypted message.
  */
-function caesarDecrypt(encryptedMessage = "", shift = 3) {
+function caesarDecrypt(encryptedMessage, shift = 3) {
+    if (encryptedMessage === undefined) {
+        throw new Error("A message to decrypt was not provided");
+    }
+    if (shift <= 0) {
+        throw new Error("The shift value cannot be negative");
+    }
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     function shiftCharacter(char, shift) {
         if (char === " ") {

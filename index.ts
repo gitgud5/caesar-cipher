@@ -7,7 +7,14 @@ import { CaesarInterface } from "./interface";
  * @param shift - The number of positions to shift each character (default: 3).
  * @returns The encrypted message.
  */
-export function caesarEncrypt(message: string = "", shift: number = 3): string {
+export function caesarEncrypt(message: string, shift: number = 3): string {
+  if (message === undefined) {
+    throw new Error("A message to encrypt was not provided");
+  }
+  if (shift <= 0) {
+    throw new Error("The shift value cannot be negative");
+  }
+
   // Alright firstly, we are gonna make a string so that we can move the alphabets
   const alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -53,9 +60,16 @@ export function caesarEncrypt(message: string = "", shift: number = 3): string {
  * @returns The decrypted message.
  */
 export function caesarDecrypt(
-  encryptedMessage: string = "",
+  encryptedMessage: string,
   shift: number = 3
 ): string {
+  if (encryptedMessage === undefined) {
+    throw new Error("A message to decrypt was not provided");
+  }
+  if (shift <= 0) {
+    throw new Error("The shift value cannot be negative");
+  }
+
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
   function shiftCharacter(char: string, shift: number) {

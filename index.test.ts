@@ -26,6 +26,19 @@ describe("caesarEncrypt", () => {
     const expected: string = "KHOOR, IXQ ZRUOG!";
     expect(caesarEncrypt(message)).toBe(expected);
   });
+
+  it("should handle if no string is passed to it", () => {
+    // @ts-expect-error
+    expect(() => caesarEncrypt()).toThrowError(Error);
+    expect(caesarEncrypt).toThrowError("A message to encrypt was not provided");
+  });
+
+  it("should give error when number is negative", () => {
+    expect(() => caesarEncrypt("cool string", -3)).toThrowError(Error);
+    expect(() => caesarEncrypt("cool string", -3)).toThrowError(
+      "The shift value cannot be negative"
+    );
+  });
 });
 
 // Test cases for caesarDecrypt function
@@ -53,5 +66,18 @@ describe("caesarDecrypt", () => {
     const encryptedMessage: string = "KHOOR, IXQ ZRUOG!";
     const expected: string = "HELLO, FUN WORLD!";
     expect(caesarDecrypt(encryptedMessage)).toBe(expected);
+  });
+
+  it("should handle if no string is passed to it", () => {
+    // @ts-expect-error
+    expect(() => caesarDecrypt()).toThrowError(Error);
+    expect(caesarDecrypt).toThrowError("A message to decrypt was not provided");
+  });
+
+  it("should give error when number is negative", () => {
+    expect(() => caesarDecrypt("cool string", -3)).toThrowError(Error);
+    expect(() => caesarDecrypt("cool string", -3)).toThrowError(
+      "The shift value cannot be negative"
+    );
   });
 });
