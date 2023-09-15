@@ -28,7 +28,8 @@
   "scripts": {
     "clean": "del /q /s /f .\\build\\*",
     "build": "npm run clean && tsc",
-    "test": "npm run build && jest"
+    "test": "jest",
+    "test-local": "npm run build && jest"
   },
   "repository": {
     "type": "git",
