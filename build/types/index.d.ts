@@ -1,4 +1,4 @@
-import { CaesarInterface } from "./interface";
+import type { CaesarInterface } from "./interface";
 /**
  * Encrypts a message using the Caesar cipher.
  *
