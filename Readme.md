@@ -11,9 +11,11 @@ Caesar Cipher, a time-honored encryption technique, traces its origins back to t
 ## Astonishing Features
 
 ✨ **Effortless Encryption:** Encrypt and decrypt messages with unmatched simplicity.
+
 🔒 **Tailored Shifts:** Customize your shift value for unparalleled security.
 <!-- 🌐 **Alphabet Agnostic:** Compatible with any alphabet, not limited to English. -->
 💻 **Node.js & TypeScript Ready:** Seamlessly integrate it into your Node.js and TypeScript projects, complete with autocompletion!
+
 ✔ **Highly optimized:** The package size is highly optimized and won't effect your code at all.
 
 ## Installation
