@@ -7,6 +7,7 @@ Welcome to Caesar Cipher, your gateway to the world of encryption, where ancient
 ## Unveiling Caesar Cipher
 
 Caesar Cipher, a time-honored encryption technique, traces its origins back to the days of Julius Caesar himself. It's a powerful method that involves shifting letters of the alphabet by a fixed number of positions to encode and decode messages. Now, with this exceptional package, you can harness the power of Caesar Cipher to protect your messages with ease and style.
+With the latest update, it is in even smaller size, thus optimizing your code further more.
 
 ## Astonishing Features
 
