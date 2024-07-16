@@ -1,8 +1,13 @@
 {
   "name": "caesar-crypt",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "This is the best encyption tool in the market. And it is in typescript now :)",
-  "files": ["build", "LICENSE", "Readme.md", "package.json"],
+  "files": [
+    "build",
+    "LICENSE",
+    "Readme.md",
+    "package.json"
+  ],
   "keywords": [
     "caesar-cipher",
     "encryption",
